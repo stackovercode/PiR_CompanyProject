@@ -1,0 +1,109 @@
+<robot name="AppliedVisionSystem">
+
+	<link name="vision_box">
+	   <visual>
+		   <origin xyz="0 0 0" rpy="0 0 0"/>
+		   <geometry>
+			   <box size="0.29832 0.29832 0.91457"/>
+		   </geometry>
+		   <material name="DarkRed">
+				  <color rgba="0.45 0.06 0.01 1.0"/>
+			</material>
+	   </visual>	
+   </link>
+   
+   
+   <joint name="joint_vb_cylinder" type="fixed">
+	   <parent link="vision_box"/>
+	   <child link="cylinder"/>
+	   <origin xyz="0 0 -0.457285" rpy="0 0 0"/>
+   </joint>
+			  
+
+	<link name="cylinder">
+	   <visual>
+		   <origin xyz="0 0 -0.025" rpy="0 0 0"/>
+		   <geometry>
+			   <cylinder radius="0.15" length="0.05"/>
+		   </geometry>  
+		   <material name="Grey">
+			   <color rgba="0.1 0.1 0.1 1.0"/>
+		   </material>
+	   </visual>	
+   </link>
+   
+   <joint name="joint_vb_pipe_left" type="fixed">
+	   <parent link="vision_box"/>
+	   <child link="pipe_left"/>
+	   <origin xyz="-0.15916 -0.13916 -0.1" rpy="0 0 0"/>
+   </joint>
+
+   <link name="pipe_left">
+	   <visual>
+		   <origin xyz="0 0 0" rpy="0 0 0"/>
+		   <geometry>
+			   <cylinder radius="0.01" length="0.7"/>
+		   </geometry>  
+		   <material name="Grey">
+			   <color rgba="0.1 0.1 0.1 1.0"/>
+		   </material>
+	   </visual>	
+   </link>
+
+   <joint name="joint_vb_pipe_right" type="fixed">
+	   <parent link="vision_box"/>
+	   <child link="pipe_right"/>
+	   <origin xyz="-0.15916 0.13916 -0.1" rpy="0 0 0"/>
+   </joint>
+
+   <link name="pipe_right">
+	   <visual>
+		   <origin xyz="0 0 0" rpy="0 0 0"/>
+		   <geometry>
+			   <cylinder radius="0.01" length="0.7"/>
+		   </geometry>  
+		   <material name="Grey">
+			   <color rgba="0.1 0.1 0.1 1.0"/>
+		   </material>
+	   </visual>	
+   </link>
+
+   <joint name="joint_vb_ha_left" type="fixed">
+	   <parent link="vision_box"/>
+	   <child link="height_adjuster_left"/>
+	   <origin xyz="0 0 0" rpy="0 0 0"/>
+   </joint>
+
+
+   <link name="height_adjuster_left">
+	   <visual>
+		   <origin xyz="-0.21 -0.13916 -0.28" rpy="0 0 0"/>
+		   <geometry>
+			   <box size="0.088 0.01 0.86040"/>
+		   </geometry>  
+		   <material name="Grey">
+			   <color rgba="0.1 0.1 0.1 1.0"/>
+		   </material>
+	   </visual>	
+   </link>
+
+   <joint name="joint_vb_ha_right" type="fixed">
+	   <parent link="vision_box"/>
+	   <child link="height_adjuster_right"/>
+	   <origin xyz="0 0 0" rpy="0 0 0"/>
+   </joint>
+
+   <link name="height_adjuster_right">
+	   <visual>
+		   <origin xyz="-0.21 0.13916 -0.28" rpy="0 0 0"/>
+		   <geometry>
+			   <box size="0.088 0.01 0.86040"/>
+		   </geometry>  
+		   <material name="Grey">
+			   <color rgba="0.1 0.1 0.1 1.0"/>
+		   </material>
+	   </visual>	
+   </link>
+   
+
+</robot>
