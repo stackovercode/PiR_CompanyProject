@@ -1,0 +1,4 @@
+/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin.dir
+/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/edit_cache.dir
+/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/rebuild_cache.dir
+/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir
