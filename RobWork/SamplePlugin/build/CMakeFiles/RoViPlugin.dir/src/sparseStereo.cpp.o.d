@@ -1,7 +1,7 @@
 CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o: \
- /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/sparseStereo.cpp \
+ /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/sparseStereo.cpp \
  /usr/include/stdc-predef.h \
- /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/sparseStereo.hpp \
+ /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/sparseStereo.hpp \
  /home/reventlov/Programs/RobWork/RobWork/src/rw/rw.hpp \
  /home/reventlov/Programs/RobWork/RobWork/src/rw/common.hpp \
  /home/reventlov/Programs/RobWork/RobWork/src/rw/common/Archive.hpp \

@@ -154,11 +154,11 @@ void SamplePlugin::open (WorkCell* workcell)
     if ( _table == nullptr )
         RW_THROW("Table frame not found.");
     
-    _tcp   = _wc->findFrame<rw::kinematics::Frame>("UR-6-85-5-A.TCP");
+    _tcp   = _wc->findFrame<rw::kinematics::Frame>("UR10e.Flange");
     if ( _tcp == nullptr )
         RW_THROW("TCP frame not found.");
 
-    _UR5 = _wc->findDevice<rw::models::SerialDevice>("UR-6-85-5-A");
+    _UR5 = _wc->findDevice<rw::models::SerialDevice>("UR10e");
     if ( _UR5 == nullptr )
         RW_THROW("Device UR6 not found.");
 
@@ -171,7 +171,7 @@ void SamplePlugin::open (WorkCell* workcell)
         RW_THROW("Could not load URReference ... check model");
 
 
-    _device = _wc->findDevice ("UR-6-85-5-A");
+    _device = _wc->findDevice ("UR10e");
     _step   = -1;
 
     _home = _UR5->getQ(_state);
@@ -1010,7 +1010,7 @@ std::vector<rw::math::Q> SamplePlugin::findConfigurations(const std::string name
     // Get, make and print name of frames
     const std::string robotName = robot_ur5->getName();
     const std::string nameRobotBase = robotName + "." + "Base";
-    const std::string nameRobotTcp = robotName + "." + "TCP";
+    const std::string nameRobotTcp = robotName + "." + "Flange";
 
     // Find frames and check for existence
     rw::kinematics::Frame* frameGoal = wc->findFrame(nameGoal);

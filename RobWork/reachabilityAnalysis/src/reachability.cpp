@@ -30,7 +30,7 @@ std::vector<rw::math::Q> Reachability::getConfigurations(const std::string nameG
                                            rw::kinematics::State state) {
     const std::string robotName = robot->getName();
     const std::string nameRobotBase = robotName + "." + "Base";
-    const std::string nameRobotTcp = robotName + "." + "TCP";
+    const std::string nameRobotTcp = robotName + "." + "Flange";
 
     // Find frames and check for existence
     rw::kinematics::Frame* frameGoal = wc->findFrame(nameGoal);
@@ -117,7 +117,7 @@ std::vector<rw::math::Q> Reachability::getCollisionFreeSolutions(rw::models::Wor
        }
        // Store at rwplay file
        rw::loaders::PathLoader::storeTimedStatePath(*wc, tStatePath, rwplay_path);
-       rw::loaders::PathLoader::storeTimedStatePath(*wc, tStatePath, "../../Experiments/stepsize_006/top/rwplays/complete/visu.rwplay");
+       rw::loaders::PathLoader::storeTimedStatePath(*wc, tStatePath, "../../Experiments/stepsize_test/side/rwplays/complete/visu.rwplay");
   }
 
     return collisionFreeSolutions;

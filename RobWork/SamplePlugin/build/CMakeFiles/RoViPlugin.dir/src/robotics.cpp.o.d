@@ -1,7 +1,7 @@
 CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o: \
- /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/robotics.cpp \
+ /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/robotics.cpp \
  /usr/include/stdc-predef.h \
- /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/robotics.hpp \
+ /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/robotics.hpp \
  /home/reventlov/Programs/RobWork/RobWork/src/rw/rw.hpp \
  /home/reventlov/Programs/RobWork/RobWork/src/rw/common.hpp \
  /home/reventlov/Programs/RobWork/RobWork/src/rw/common/Archive.hpp \

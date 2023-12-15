@@ -220,7 +220,7 @@
 #define __DEC_EVAL_METHOD__ 2
 #define __FLT_MANT_DIG__ 24
 #define __FLT16_MIN_10_EXP__ (-4)
-#define __VERSION__ "11.3.0"
+#define __VERSION__ "11.4.0"
 #define __UINT64_C(c) c ## UL
 #define __cpp_unicode_characters 201411L
 #define __FLT128_IS_IEC_60559__ 2
@@ -409,7 +409,7 @@
 #define __INT_LEAST32_WIDTH__ 32
 #define __SIZEOF_FLOAT__ 4
 #define __ATOMIC_CONSUME 1
-#define __GNUC_MINOR__ 3
+#define __GNUC_MINOR__ 4
 #define __GLIBCXX_TYPE_INT_N_0 __int128
 #define __INT_FAST16_WIDTH__ 64
 #define __UINTMAX_MAX__ 0xffffffffffffffffUL

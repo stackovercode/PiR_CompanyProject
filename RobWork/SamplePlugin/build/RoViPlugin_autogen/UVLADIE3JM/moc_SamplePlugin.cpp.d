@@ -1,6 +1,6 @@
-/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/UVLADIE3JM/moc_SamplePlugin.cpp: /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/SamplePlugin.hpp \
-  /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/moc_predefs.h \
-  /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/plugin.json \
+/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/UVLADIE3JM/moc_SamplePlugin.cpp: /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/SamplePlugin.hpp \
+  /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/moc_predefs.h \
+  /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/plugin.json \
   /home/reventlov/Programs/RobWork/RobWork/src/RobWorkConfig.hpp \
   /home/reventlov/Programs/RobWork/RobWork/src/rw/common.hpp \
   /home/reventlov/Programs/RobWork/RobWork/src/rw/common/Archive.hpp \

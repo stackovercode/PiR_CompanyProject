@@ -1,4 +1,4 @@
-/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin.dir
-/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/edit_cache.dir
-/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/rebuild_cache.dir
-/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir
+/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin.dir
+/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/edit_cache.dir
+/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/rebuild_cache.dir
+/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir

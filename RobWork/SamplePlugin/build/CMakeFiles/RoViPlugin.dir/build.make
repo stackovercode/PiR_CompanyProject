@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reventlov/RobCand/RoVi_Project/SamplePlugin
+CMAKE_SOURCE_DIR = /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build
+CMAKE_BINARY_DIR = /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RoViPlugin.dir/depend.make
@@ -73,78 +73,78 @@ RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp: ../src/resources.qrc
 RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp: CMakeFiles/RoViPlugin_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json
 RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp: ../src/pa_icon.png
 RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for src/resources.qrc"
-	/usr/bin/cmake -E cmake_autorcc /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json RelWithDebInfo
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for src/resources.qrc"
+	/usr/bin/cmake -E cmake_autorcc /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json RelWithDebInfo
 
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o: CMakeFiles/RoViPlugin.dir/flags.make
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o: RoViPlugin_autogen/mocs_compilation.cpp
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o: CMakeFiles/RoViPlugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o -MF CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o -c /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o -MF CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.o -c /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/mocs_compilation.cpp
 
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/mocs_compilation.cpp > CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/mocs_compilation.cpp > CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/mocs_compilation.cpp -o CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/mocs_compilation.cpp -o CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o: CMakeFiles/RoViPlugin.dir/flags.make
 CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o: ../src/SamplePlugin.cpp
 CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o: CMakeFiles/RoViPlugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o -MF CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o.d -o CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o -c /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/SamplePlugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o -MF CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o.d -o CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o -c /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/SamplePlugin.cpp
 
 CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/SamplePlugin.cpp > CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/SamplePlugin.cpp > CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.i
 
 CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/SamplePlugin.cpp -o CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/SamplePlugin.cpp -o CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.s
 
 CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o: CMakeFiles/RoViPlugin.dir/flags.make
 CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o: ../src/sparseStereo.cpp
 CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o: CMakeFiles/RoViPlugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o -MF CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o.d -o CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o -c /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/sparseStereo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o -MF CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o.d -o CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.o -c /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/sparseStereo.cpp
 
 CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/sparseStereo.cpp > CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/sparseStereo.cpp > CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.i
 
 CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/sparseStereo.cpp -o CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/sparseStereo.cpp -o CMakeFiles/RoViPlugin.dir/src/sparseStereo.cpp.s
 
 CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o: CMakeFiles/RoViPlugin.dir/flags.make
 CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o: ../src/robotics.cpp
 CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o: CMakeFiles/RoViPlugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o -MF CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o.d -o CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o -c /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/robotics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o -MF CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o.d -o CMakeFiles/RoViPlugin.dir/src/robotics.cpp.o -c /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/robotics.cpp
 
 CMakeFiles/RoViPlugin.dir/src/robotics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoViPlugin.dir/src/robotics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/robotics.cpp > CMakeFiles/RoViPlugin.dir/src/robotics.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/robotics.cpp > CMakeFiles/RoViPlugin.dir/src/robotics.cpp.i
 
 CMakeFiles/RoViPlugin.dir/src/robotics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoViPlugin.dir/src/robotics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/robotics.cpp -o CMakeFiles/RoViPlugin.dir/src/robotics.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/robotics.cpp -o CMakeFiles/RoViPlugin.dir/src/robotics.cpp.s
 
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o: CMakeFiles/RoViPlugin.dir/flags.make
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o: RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o: CMakeFiles/RoViPlugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o -MF CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o.d -o CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o -c /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o -MF CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o.d -o CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.o -c /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp
 
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp > CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp > CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.i
 
 CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp -o CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp -o CMakeFiles/RoViPlugin.dir/RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp.s
 
 # Object files for target RoViPlugin
 RoViPlugin_OBJECTS = \
@@ -303,7 +303,7 @@ libRoViPlugin.so: /usr/local/lib/libopencv_photo.so.4.6.0
 libRoViPlugin.so: /usr/local/lib/libopencv_imgproc.so.4.6.0
 libRoViPlugin.so: /usr/local/lib/libopencv_core.so.4.6.0
 libRoViPlugin.so: CMakeFiles/RoViPlugin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared module libRoViPlugin.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared module libRoViPlugin.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RoViPlugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -315,6 +315,6 @@ CMakeFiles/RoViPlugin.dir/clean:
 .PHONY : CMakeFiles/RoViPlugin.dir/clean
 
 CMakeFiles/RoViPlugin.dir/depend: RoViPlugin_autogen/UVLADIE3JM/qrc_resources.cpp
-	cd /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reventlov/RobCand/RoVi_Project/SamplePlugin /home/reventlov/RobCand/RoVi_Project/SamplePlugin /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RoViPlugin.dir/depend
 

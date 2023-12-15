@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reventlov/RobCand/RoVi_Project/SamplePlugin
+CMAKE_SOURCE_DIR = /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build
+CMAKE_BINARY_DIR = /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build
 
 # Utility rule file for RoViPlugin_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/RoViPlugin_autogen.dir/compiler_depend.make
 include CMakeFiles/RoViPlugin_autogen.dir/progress.make
 
 CMakeFiles/RoViPlugin_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target RoViPlugin"
-	/usr/bin/cmake -E cmake_autogen /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/AutogenInfo.json RelWithDebInfo
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target RoViPlugin"
+	/usr/bin/cmake -E cmake_autogen /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/AutogenInfo.json RelWithDebInfo
 
 RoViPlugin_autogen: CMakeFiles/RoViPlugin_autogen
 RoViPlugin_autogen: CMakeFiles/RoViPlugin_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/RoViPlugin_autogen.dir/clean:
 .PHONY : CMakeFiles/RoViPlugin_autogen.dir/clean
 
 CMakeFiles/RoViPlugin_autogen.dir/depend:
-	cd /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reventlov/RobCand/RoVi_Project/SamplePlugin /home/reventlov/RobCand/RoVi_Project/SamplePlugin /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RoViPlugin_autogen.dir/depend
 

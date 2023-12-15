@@ -35,8 +35,8 @@ while (true){
         experiment_nr = 1;
         // file_path = "../../Experiments/stepsize_006/side/data/right.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/right/";
-        file_path = "../../Experiments/stepsize_006/top/data/right.txt";
-        folder = "../../Experiments/stepsize_006/top/rwplays/right/";
+        file_path = "../../Experiments/stepsize_test/side/data/right.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/right/";
         std::cout << "during 1. position" << std::endl;
     }
     else if (temp == 2)
@@ -44,8 +44,8 @@ while (true){
         experiment_nr = 2;
         // file_path = "../../Experiments/stepsize_006/side/data/mid.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/mid/";
-        file_path = "../../Experiments/stepsize_006/top/data/mid.txt";
-        folder = "../../Experiments/stepsize_006/top/rwplays/mid/";
+        file_path = "../../Experiments/stepsize_test/side/data/mid.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/mid/";
         std::cout << "during 2. position" << std::endl;
     }
     else if (temp == 3)
@@ -53,16 +53,16 @@ while (true){
         experiment_nr = 3;
         // file_path = "../../Experiments/stepsize_006/side/data/left.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/left/";
-        file_path = "../../Experiments/stepsize_006/top/data/left.txt";
-        folder = "../../Experiments/stepsize_006/top/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/left.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/left/";
         std::cout << "during 3. position" << std::endl;
     } else if (temp == 4)
     {
         experiment_nr = 4;
         // file_path = "../../Experiments/stepsize_006/side/data/place.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/place/";
-        file_path = "../../Experiments/stepsize_006/top/data/place.txt";
-        folder = "../../Experiments/stepsize_006/top/rwplays/place/";
+        file_path = "../../Experiments/stepsize_test/side/data/place.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/place/";
         std::cout << "during 4. position" << std::endl;
     } else {
         return 0;
@@ -79,7 +79,7 @@ while (true){
     }
 
     // find device
-    const std::string device_name = "UR-6-85-5-A";
+    const std::string device_name = "UR10e";
     rw::models::SerialDevice::Ptr robot_ur5 = wc->findDevice<rw::models::SerialDevice>(device_name);
     if (NULL == robot_ur5) {
         RW_THROW("Could not load " + device_name + " ... check model");

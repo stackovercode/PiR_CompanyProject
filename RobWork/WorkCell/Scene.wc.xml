@@ -12,16 +12,16 @@
 		<RPY>0 0 0</RPY>
 		<Pos>0 0 0.11</Pos>
 	</Frame>
-	<Include file="UR5/UR-6-85-5-A/Device.wc.xml" />
+	<Include file="UR10e_2018/UR10e.xml" />
 
 	<!-- x was -0.0134 and z pos was 0 and x was 0-->
 	<!--insert gripper definition wsg50-->
-	<Frame name="Tool" refframe="UR-6-85-5-A.TCP">
+	<Frame name="Tool" refframe="UR10e.Flange">
 		<RPY> 0 0 0 </RPY> <Pos> 0 0 0.072 </Pos> <!-- 180 0 0 -->
 	</Frame>
 	<Include file="wsg50/wsg50.xml"/>
 
-	<Frame name="GraspTCP" refframe="UR-6-85-5-A.TCP" type="Fixed">
+	<Frame name="GraspTCP" refframe="UR10e.Flange" type="Fixed">
 		<RPY>0 0 0</RPY>
 		<Pos>0 0 0.15</Pos>
 	</Frame>

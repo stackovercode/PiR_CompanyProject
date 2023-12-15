@@ -1,4 +1,4 @@
-# Install script for directory: /home/reventlov/RobCand/RoVi_Project/SamplePlugin
+# Install script for directory: /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

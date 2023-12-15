@@ -1,7 +1,7 @@
 CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o: \
- /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/SamplePlugin.cpp \
+ /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/SamplePlugin.cpp \
  /usr/include/stdc-predef.h \
- /home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/SamplePlugin.hpp \
+ /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/SamplePlugin.hpp \
  /home/reventlov/Programs/RobWork/RobWork/src/rw/models/WorkCell.hpp \
  /home/reventlov/Programs/RobWork/RobWork/src/rw/core/Event.hpp \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_algobase.h \
@@ -2828,7 +2828,7 @@ CMakeFiles/RoViPlugin.dir/src/SamplePlugin.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/include/ui_SamplePlugin.h \
+ /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/include/ui_SamplePlugin.h \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/aarch64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/aarch64-linux-gnu/qt6/QtWidgets/QApplication \

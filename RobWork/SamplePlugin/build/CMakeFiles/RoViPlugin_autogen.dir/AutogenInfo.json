@@ -1,16 +1,16 @@
 {
-	"BUILD_DIR" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen",
-	"CMAKE_BINARY_DIR" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin",
+	"BUILD_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen",
+	"CMAKE_BINARY_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/CMakeLists.txt",
-		"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/3.22.1/CMakeSystem.cmake",
+		"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/CMakeLists.txt",
+		"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/3.22.1/CMakeSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake",
-		"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake",
-		"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
+		"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake",
+		"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake",
@@ -528,35 +528,35 @@
 		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
 		"/usr/local/lib/cmake/opencv4/OpenCVModules.cmake",
 		"/usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake",
-		"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/resources.qrc"
+		"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/resources.qrc"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin",
+	"CMAKE_SOURCE_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/SamplePlugin.hpp",
+			"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/SamplePlugin.hpp",
 			"MU",
 			"UVLADIE3JM/moc_SamplePlugin.cpp",
 			null
 		],
 		[
-			"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/robotics.hpp",
+			"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/robotics.hpp",
 			"MU",
 			"UVLADIE3JM/moc_robotics.cpp",
 			null
 		],
 		[
-			"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/sparseStereo.hpp",
+			"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/sparseStereo.hpp",
 			"MU",
 			"UVLADIE3JM/moc_sparseStereo.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"BOOST_ALL_NO_LIB",
@@ -585,7 +585,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build",
+		"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build",
 		"/home/reventlov/Programs/RobWork/RobWorkStudio/src",
 		"/home/reventlov/Programs/RobWork/RobWorkStudio/ext/qtpropertybrowser/src",
 		"/usr/include/aarch64-linux-gnu/qt6/QtCore",
@@ -620,31 +620,31 @@
 		"-c",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/RoViPlugin_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 1,
-	"PARSE_CACHE_FILE" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 2,
-	"SETTINGS_FILE" : "/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/SamplePlugin.cpp",
+			"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/SamplePlugin.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/robotics.cpp",
+			"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/robotics.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/reventlov/RobCand/RoVi_Project/SamplePlugin/src/sparseStereo.cpp",
+			"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/sparseStereo.cpp",
 			"MU",
 			null
 		]

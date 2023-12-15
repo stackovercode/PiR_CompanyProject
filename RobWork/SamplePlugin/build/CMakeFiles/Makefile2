@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reventlov/RobCand/RoVi_Project/SamplePlugin
+CMAKE_SOURCE_DIR = /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build
+CMAKE_BINARY_DIR = /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,14 +82,14 @@ clean: CMakeFiles/RoViPlugin_autogen.dir/clean
 CMakeFiles/RoViPlugin.dir/all: CMakeFiles/RoViPlugin_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoViPlugin.dir/build.make CMakeFiles/RoViPlugin.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoViPlugin.dir/build.make CMakeFiles/RoViPlugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target RoViPlugin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target RoViPlugin"
 .PHONY : CMakeFiles/RoViPlugin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RoViPlugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RoViPlugin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles 0
 .PHONY : CMakeFiles/RoViPlugin.dir/rule
 
 # Convenience name for target.
@@ -108,14 +108,14 @@ CMakeFiles/RoViPlugin.dir/clean:
 CMakeFiles/RoViPlugin_autogen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoViPlugin_autogen.dir/build.make CMakeFiles/RoViPlugin_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoViPlugin_autogen.dir/build.make CMakeFiles/RoViPlugin_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles --progress-num=8 "Built target RoViPlugin_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles --progress-num=8 "Built target RoViPlugin_autogen"
 .PHONY : CMakeFiles/RoViPlugin_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RoViPlugin_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RoViPlugin_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reventlov/RobCand/RoVi_Project/SamplePlugin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles 0
 .PHONY : CMakeFiles/RoViPlugin_autogen.dir/rule
 
 # Convenience name for target.
