@@ -151,8 +151,8 @@ private:
     int _step;
     int _stepGrasp;
     int _stepRelease;
-    rw::kinematics::MovableFrame* _ball;
-    // rw::kinematics::MovableFrame* _cylinder;
+    // rw::kinematics::MovableFrame* _ball;
+    rw::kinematics::MovableFrame* _cylinder;
     //  rw::kinematics::MovableFrame* _dino;
     // rw::kinematics::MovableFrame* _square;
     // rw::kinematics::MovableFrame* _bottle;

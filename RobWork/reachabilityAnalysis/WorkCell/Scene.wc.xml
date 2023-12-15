@@ -17,7 +17,7 @@
 	<!-- x was -0.0134 and z pos was 0 and x was 0-->
 	<!--insert gripper definition wsg50-->
 	<Frame name="Tool" refframe="UR10e.Flange">
-		<RPY> 0 0 0 </RPY> <Pos> 0 0 0.072 </Pos> <!-- 180 0 0 -->
+		<RPY> 180 0 0 </RPY> <Pos> 0 0 0.072 </Pos> <!-- 180 0 0 -->
 	</Frame>
 	<Include file="wsg50/wsg50.xml"/>
 
@@ -37,7 +37,7 @@
 		</Drawable>
 	</Frame>
 
-	<Frame name="Cylinder2" refframe="Table" type="Movable" daf="true">
+	 <Frame name="Cylinder2" refframe="Table" type="Movable" daf="true">
 		<RPY> -90 0 180 </RPY>
 		<Pos> 0.0 0.54 0.15</Pos>	
 		<Drawable name="Cylinder" refframe="Cylinder">
@@ -51,7 +51,7 @@
 		<Drawable name="Cylinder" refframe="Cylinder">
 			<Polytope file="parts/cylinder" />
 		</Drawable>
-	</Frame>
+	</Frame> 
 
 	<Frame name="Cylinder4" refframe="Table" type="Movable" daf="true">
 		<RPY> -90 0 180 </RPY>
@@ -65,7 +65,7 @@
 	<!-- Top grip-->
 	<!-- Side grip / -90 is good for pick and 90 is good for place-->
 	<Frame name="GraspTarget" refframe="Cylinder" type="Movable">
-		<RPY> 0 0 180 </RPY> <Pos> 0 0 0 </Pos>
+		<RPY> 0 0 90 </RPY> <Pos> 0 0 0 </Pos>
 	</Frame>
 
 

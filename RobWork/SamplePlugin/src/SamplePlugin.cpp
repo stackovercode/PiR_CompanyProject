@@ -129,13 +129,13 @@ void SamplePlugin::open (WorkCell* workcell)
             }
         }
 
-    _ball  = _wc->findFrame<rw::kinematics::MovableFrame>("Ball");
-    if ( _ball == nullptr )
-        RW_THROW("Ball frame not found.");
+    // _ball  = _wc->findFrame<rw::kinematics::MovableFrame>("Ball");
+    // if ( _ball == nullptr )
+    //     RW_THROW("Ball frame not found.");
 
-    // _cylinder  = _wc->findFrame<rw::kinematics::MovableFrame>("Cylinder");
-    // if ( _cylinder == nullptr )
-    // RW_THROW("Ball frame not found.");
+    _cylinder  = _wc->findFrame<rw::kinematics::MovableFrame>("Cylinder");
+    if ( _cylinder == nullptr )
+    RW_THROW("Ball frame not found.");
 
     // _dino  = _wc->findFrame<rw::kinematics::MovableFrame>("Trex");
     // if ( _dino == nullptr )
@@ -175,7 +175,7 @@ void SamplePlugin::open (WorkCell* workcell)
     _step   = -1;
 
     _home = _UR5->getQ(_state);
-    _ballPos = _ball->getTransform(_state);
+    _ballPos = _cylinder->getTransform(_state);
     _ballHomePos = _ballPos;
 
     }
@@ -374,7 +374,7 @@ void SamplePlugin::P2P(cv::Mat pose){
     _base->moveTo(base_trans, _state);
 
     // Move to pick area
-    _ball->moveTo(cylinder_trans, table_frame, _state);
+    _cylinder->moveTo(cylinder_trans, table_frame, _state);
 
    //std::vector<rw::math::Transform3D<>> Points = p.pointOrder(_ball->getTransform(_state), _UR5->baseTend(_state), placeFrame, nearPickFrame, nearPlaceFrame);
    //std::vector<rw::math::Transform3D<>> Points = pointOrder(_ball->getTransform(_state), _UR5->baseTend(_state), placeFrame, nearPickFrame, nearPlaceFrame);
@@ -385,11 +385,11 @@ void SamplePlugin::P2P(cv::Mat pose){
     Points.push_back(Point0);
     rw::math::Transform3D<> Point1 = nearPickFrame;
     Points.push_back(Point1);
-    rw::math::Transform3D<> Point2 = _ball->getTransform(_state)*rw::math::Transform3D<>(rw::math::Vector3D<>(0,0,-0.25));
+    rw::math::Transform3D<> Point2 = _cylinder->getTransform(_state)*rw::math::Transform3D<>(rw::math::Vector3D<>(0,0,-0.25));
     Points.push_back(Point2);
-    rw::math::Transform3D<> Point3 = _ball->getTransform(_state);
+    rw::math::Transform3D<> Point3 = _cylinder->getTransform(_state);
     Points.push_back(Point3);
-    rw::math::Transform3D<> Point4 = _ball->getTransform(_state)*rw::math::Transform3D<>(rw::math::Vector3D<>(0,0,-0.25));
+    rw::math::Transform3D<> Point4 = _cylinder->getTransform(_state)*rw::math::Transform3D<>(rw::math::Vector3D<>(0,0,-0.25));
     Points.push_back(Point4);
     rw::math::Transform3D<> Point5 = nearPickFrame;
     Points.push_back(Point5);
@@ -466,7 +466,7 @@ void SamplePlugin::P2P(cv::Mat pose){
 
 void SamplePlugin::resetRobotAndObject(){
     _device->setQ(_home,_state);
-     _ball->moveTo(_ballPos, _table,_state);
+     _cylinder->moveTo(_ballPos, _table,_state);
     //_ball->moveTo(_ballPos,_state);
     getRobWorkStudio()->setState(_state);
 }
@@ -572,13 +572,13 @@ void SamplePlugin::moveCylinder(int index){
     cylinder_pos = rw::math::Vector3D<>(x, y, z);
 
     //Get the rotation of the cylinder
-    rw::math::Rotation3D<> cylinder_rot = _ball->getTransform(_state).R();
+    rw::math::Rotation3D<> cylinder_rot = _cylinder->getTransform(_state).R();
 
     //Create the transform
     rw::math::Transform3D<> cylinder_trans(cylinder_pos, cylinder_rot);
 
     //Move the cylinder to the new position
-    _ball->moveTo(cylinder_trans, _table, _state);
+    _cylinder->moveTo(cylinder_trans, _table, _state);
     getRobWorkStudio()->setState(_state);
 }
 
@@ -932,15 +932,15 @@ void SamplePlugin::timer() {
         _device->setQ(_path.at(_step),_state);
         _step++;
         if (_step == _stepGrasp)
-            rw::kinematics::Kinematics::gripFrame(_ball, _tcp, _state);
+            rw::kinematics::Kinematics::gripFrame(_cylinder, _tcp, _state);
 
         if (_step == _stepRelease)
-            rw::kinematics::Kinematics::gripFrame(_ball, _table, _state);
+            rw::kinematics::Kinematics::gripFrame(_cylinder, _table, _state);
         
         getRobWorkStudio()->setState(_state);
         
         if ( _step >= _path.size() )
-            std::cout << "Ball final (place) location: " << _ball->getTransform(_state).P() << std::endl;
+            std::cout << "Ball final (place) location: " << _cylinder->getTransform(_state).P() << std::endl;
     }
 }
 
