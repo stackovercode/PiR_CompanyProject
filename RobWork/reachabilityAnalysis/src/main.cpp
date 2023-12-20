@@ -95,8 +95,8 @@ while (true){
     }
 
     // find cylinder
-    //const std::string cylinder_name = "Cylinder";
-    const std::string cylinder_name = "Cyl";
+    const std::string cylinder_name = "Cylinder";
+    //const std::string cylinder_name = "Cyl";
     rw::kinematics::MovableFrame::Ptr cylinder_frame = wc->findFrame<rw::kinematics::MovableFrame>(cylinder_name);
     if (NULL == cylinder_frame) {
         RW_THROW("Could not find movable frame " + cylinder_name + " ... check model");
@@ -115,7 +115,7 @@ while (true){
     // get start state and default rotation
     rw::kinematics::State state = wc->getDefaultState();
     rw::math::Rotation3D<> base_rot = base_frame->getTransform(state).R();
-    rw::math::Rotation3D<> cylinder_rot = cylinder_frame->getTransform(state).R();
+     rw::math::Rotation3D<> cylinder_rot = cylinder_frame->getTransform(state).R();
 
     // Generate position for reachability analysis y=0.3,-0.6 and x=-0.4,0.4
     std::vector<rw::math::Vector3D<>> base_positions;
@@ -159,8 +159,8 @@ while (true){
         //            std::stod("-0.34"),
         //            std::stod("0.54"),
         //            std::stod("0.15"));
-        cylinder_pos = rw::math::Vector3D<>(-0.34, 0.54, 0.15);
-        cylinder_positions = {rw::math::Vector3D<>(-0.34, 0.54, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(-0.34, 0.54, 0.25);
+        cylinder_positions = {rw::math::Vector3D<>(-0.34, 0.54, 0.25)};
         // cylinder_pos = rw::math::Vector3D<>(-1.272, 2.405, 0.550);
         // cylinder_positions = {rw::math::Vector3D<>(-1.272, 2.405, 0.550)};
         break;

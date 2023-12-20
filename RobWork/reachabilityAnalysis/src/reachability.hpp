@@ -8,6 +8,7 @@
 #include <cmath>
 
 #include <rw/rw.hpp>
+#include <rw/math/RPY.hpp> // Include this if not already included
 #include <rw/invkin.hpp>
 #include <rwlibs/proximitystrategies/ProximityStrategyFactory.hpp>
 

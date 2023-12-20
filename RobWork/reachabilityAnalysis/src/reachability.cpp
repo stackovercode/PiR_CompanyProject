@@ -77,6 +77,10 @@ std::vector<rw::math::Q> Reachability::getCollisionFreeSolutions(rw::models::Wor
         /***************************************************************/
         /* Use this to move the object up, when grabbing from the top. */
         /***************************************************************/
+
+        // Debug print the rotation
+        //std::cout << "Applying rotation RPY: " << rot(0) << ", " << rot(1) << ", " << rot(2) << std::endl;
+
     
         Frame* table_frame = wc->findFrame ("Table");
         rw::math::Transform3D<> trans(pos, rot);
@@ -87,7 +91,7 @@ std::vector<rw::math::Q> Reachability::getCollisionFreeSolutions(rw::models::Wor
         //                        state);
 
         /****************************************************************************/
-        /* Use this to rotate 360 degree aound object, when grabbing from the side. */
+        /* Use this to rotate 360 degree around object, when grabbing from the side. */
         /****************************************************************************/
 
         //object->setTransform(Transform3D<> (pos, rot), state);

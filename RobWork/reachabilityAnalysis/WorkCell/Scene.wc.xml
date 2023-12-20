@@ -44,7 +44,7 @@
 
 	<Frame name="URReference" refframe="Table" type="Movable">
 		<RPY>0 0 0</RPY>
-		<Pos>0 0 0.11</Pos> <!-- 0.14 0 0.11 - CHANGE FOR REACHABILITY -->
+		<Pos>0 0 0.11</Pos> <!-- 0.14 0.06 0.11 - CHANGE FOR REACHABILITY -->
 	</Frame>
 	<Include file="UR10e_2018/UR10e.xml" />
 
@@ -62,7 +62,7 @@
 
 
 	<Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
-		<RPY> 0 0 0 </RPY>
+		<RPY> 0 0 90 </RPY>
 		<Pos> -0.34 0.54 0.15</Pos> 
 		 <!-- <Property name="ShowFrameAxis">true</Property>  -->
 		<Drawable name="Cylinder" refframe="Cylinder">
@@ -99,7 +99,7 @@
 	<!-- Top grip Previus = refframe="Cylinder"-->
 	<!-- Side grip / -90 is good for pick and 90 is good for place-->
 	<Frame name="GraspTarget" refframe="Cylinder" type="Movable">
-		<RPY> 0 0 90 </RPY> <Pos> 0 0 0 </Pos>
+		<RPY> 0 90 90 </RPY> <Pos> 0 0 0 </Pos>
 	</Frame>
 
 

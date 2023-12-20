@@ -88,7 +88,7 @@
 	</Frame>  -->
 
 	<Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
-		<RPY> 0 0 0 </RPY>
+		<RPY> 0 0 90 </RPY>
 		<Pos> -0.34 0.54 0.15</Pos> 
 		 <!-- <Property name="ShowFrameAxis">true</Property>  -->
 		<Drawable name="Cylinder" refframe="Cylinder">
