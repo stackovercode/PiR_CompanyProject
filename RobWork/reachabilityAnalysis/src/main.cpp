@@ -95,7 +95,8 @@ while (true){
     }
 
     // find cylinder
-    const std::string cylinder_name = "Cylinder";
+    //const std::string cylinder_name = "Cylinder";
+    const std::string cylinder_name = "Cyl";
     rw::kinematics::MovableFrame::Ptr cylinder_frame = wc->findFrame<rw::kinematics::MovableFrame>(cylinder_name);
     if (NULL == cylinder_frame) {
         RW_THROW("Could not find movable frame " + cylinder_name + " ... check model");
@@ -153,12 +154,15 @@ while (true){
 
     switch (experiment_nr){
     case 1:
+        //-1,272. 2,405. 0,550
         // cylinder_pos = rw::math::Vector3D<>(
         //            std::stod("-0.34"),
         //            std::stod("0.54"),
         //            std::stod("0.15"));
         cylinder_pos = rw::math::Vector3D<>(-0.34, 0.54, 0.15);
         cylinder_positions = {rw::math::Vector3D<>(-0.34, 0.54, 0.15)};
+        // cylinder_pos = rw::math::Vector3D<>(-1.272, 2.405, 0.550);
+        // cylinder_positions = {rw::math::Vector3D<>(-1.272, 2.405, 0.550)};
         break;
     case 2:
         // cylinder_pos = rw::math::Vector3D<>(
@@ -167,6 +171,8 @@ while (true){
         //            std::stod("0.15"));
         cylinder_pos = rw::math::Vector3D<>(0.0, 0.54, 0.15);
         cylinder_positions = {rw::math::Vector3D<>(0.0, 0.54, 0.15)};
+        // cylinder_pos = rw::math::Vector3D<>(-1.272, 2.405, 0.550);
+        // cylinder_positions = {rw::math::Vector3D<>(-1.272, 2.405, 0.550)};
         break;
     case 3:
         // cylinder_pos = rw::math::Vector3D<>(
@@ -175,6 +181,8 @@ while (true){
         //            std::stod("0.15"));
         cylinder_pos = rw::math::Vector3D<>(0.34, 0.54, 0.15);
         cylinder_positions = {rw::math::Vector3D<>(0.34, 0.54, 0.15)};
+        // cylinder_pos = rw::math::Vector3D<>(-1.272, 2.405, 0.550);
+        // cylinder_positions = {rw::math::Vector3D<>(-1.272, 2.405, 0.550)};
         break;
     case 4:
         // cylinder_pos = rw::math::Vector3D<>(
@@ -183,6 +191,8 @@ while (true){
         //                    std::stod("0.15"));
         cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
         cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        // cylinder_pos = rw::math::Vector3D<>(-1.272, 2.405, 0.550);
+        // cylinder_positions = {rw::math::Vector3D<>(-1.272, 2.405, 0.550)};
         break;
     default:
         std::cout << "Error here!" << std::endl;
@@ -281,7 +291,7 @@ while (true){
     temp++;
     } 
 
-    if (temp > 4){
+    if (temp > 1){ // FULL experiment is done with temp > 4
         break;
     }
 }

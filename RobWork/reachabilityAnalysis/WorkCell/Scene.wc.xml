@@ -8,9 +8,43 @@
 		</Drawable>
 	</Frame>
 
+	<Frame name="Table2" refframe="WORLD" type="Fixed">
+		<RPY>90 0 0</RPY>
+		<Pos>0 -1.1 -0.1</Pos>
+		<Drawable name="Table2" refframe="Table2">
+			<Polytope file="table2/Sigmund_table" />
+		</Drawable>
+	</Frame>
+
+	<Frame name="Tray" refframe="Table2" type="Movable" daf="true">
+		<RPY>0 0 0</RPY>
+		<Pos>3.507 1.272 0.645</Pos>
+		<Drawable name="Tray" refframe="Tray">
+			<RGB> 0.0 0.9 0.0 1.0 </RGB>
+			<Polytope file="parts/TrayN2" />
+		</Drawable>
+	</Frame>
+
+	<Frame name="Cyl" refframe="Tray" type="Movable" daf="true">
+		<RPY>0 0 0</RPY>
+		<Pos>0 0 0.006</Pos>
+		<Drawable name="Cyl" refframe="Cyl">
+			<RGB> 0.0 0.0 0.9 1.0 </RGB>
+			<Polytope file="parts/cyl" />
+		</Drawable>
+	</Frame>
+	<Frame name="Cyl2" refframe="Tray" type="Movable" daf="true">
+		<RPY>0 0 0</RPY>
+		<Pos>0 -0.165 0.006</Pos>
+		<Drawable name="Cyl2" refframe="Cyl2">
+			<RGB> 0.0 0.0 0.9 1.0 </RGB>
+			<Polytope file="parts/cyl" />
+		</Drawable>
+	</Frame>
+
 	<Frame name="URReference" refframe="Table" type="Movable">
 		<RPY>0 0 0</RPY>
-		<Pos>0.14 0.06 0.11</Pos>
+		<Pos>0 0 0.11</Pos> <!-- 0.14 0 0.11 - CHANGE FOR REACHABILITY -->
 	</Frame>
 	<Include file="UR10e_2018/UR10e.xml" />
 
@@ -62,7 +96,7 @@
 	</Frame> 
 
 
-	<!-- Top grip-->
+	<!-- Top grip Previus = refframe="Cylinder"-->
 	<!-- Side grip / -90 is good for pick and 90 is good for place-->
 	<Frame name="GraspTarget" refframe="Cylinder" type="Movable">
 		<RPY> 0 0 90 </RPY> <Pos> 0 0 0 </Pos>

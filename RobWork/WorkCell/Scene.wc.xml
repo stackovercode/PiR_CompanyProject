@@ -9,8 +9,8 @@
 	</Frame>
 
 	<Frame name="Table2" refframe="WORLD" type="Fixed">
-		<RPY>0 0 0</RPY>
-		<Pos>-0.90 0 -0.1</Pos>
+		<RPY>90 0 0</RPY>
+		<Pos>0 -1.1 -0.1</Pos>
 		<Drawable name="Table2" refframe="Table2">
 			<Polytope file="table2/Sigmund_table" />
 		</Drawable>
