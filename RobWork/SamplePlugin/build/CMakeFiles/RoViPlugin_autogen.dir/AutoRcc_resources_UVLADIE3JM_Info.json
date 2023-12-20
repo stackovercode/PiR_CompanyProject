@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen",
+	"CMAKE_BINARY_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin",
+	"CMAKE_SOURCE_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin",
+	"INCLUDE_DIR" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/RoViPlugin_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/pa_icon.png"
+	],
+	"LOCK_FILE" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/AutoRcc_resources_UVLADIE3JM_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "UVLADIE3JM",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/build/CMakeFiles/RoViPlugin_autogen.dir/AutoRcc_resources_UVLADIE3JM_Used.txt",
+	"SOURCE" : "/home/reventlov/PiR_CompanyProject/RobWork/SamplePlugin/src/resources.qrc",
+	"VERBOSITY" : 0
+}

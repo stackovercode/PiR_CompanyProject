@@ -1,0 +1,10 @@
+<CollisionSetup>
+    <Exclude>
+	<FramePair first="Table" second="Cylinder" />
+	<FramePair first="Table" second="Ball" />
+	<!-- <FramePair first="Table" second="Square" />
+	<FramePair first="Table" second="Botle" /> -->
+	<FramePair first="UR10e.Joint5" second="WSG50RefFrame" />	
+	<FramePair first="UR10e.Base" second="Table" />	
+   </Exclude>
+</CollisionSetup>
