@@ -160,6 +160,7 @@ private:
     rw::kinematics::Frame* _table;
     rw::kinematics::Frame* _tcp;
     rw::kinematics::MovableFrame *_target;
+    //rw::kinematics::Frame* _tray;
     rw::math::Q _home;
     rw::math::Transform3D<> _ballPos;
     rw::models::SerialDevice::Ptr _UR5;
