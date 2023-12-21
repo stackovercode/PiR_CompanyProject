@@ -186,7 +186,7 @@
 	<!-- Side grip / -90 is good for pick and 90 is good for place-->
 	<!-- Top grip / 180 -->
 	<Frame name="GraspTarget" refframe="Cylinder" type="Movable">
-		<RPY> 0 0 180 </RPY> <Pos> 0 0 0 </Pos>
+		<RPY> 0 0 0 </RPY> <Pos> 0 0 0 </Pos>
 	</Frame>
 
 

@@ -224,6 +224,13 @@ while (true){
     std::string rwplay = "";
     std::vector<rw::math::Q> collision_free_solutions;
 
+    //rw::math::RPY<> rot(0, 0, 90*rw::math::Deg2Rad); // INSERTED NOW EMIL; DELETE IF NOT WORKING
+    // Assuming cylinder_frame and state are correctly set
+    // rw::math::RPY<> initialRot(0, 0, 180*rw::math::Deg2Rad); // Laying down the cylinder
+    // rw::math::Transform3D<> cylinder_trans(cylinder_positions[0], initialRot);
+    // //rw::math::Transform3D<> initialTrans(cylinder_frame->getTransform(state).P(), initialRot);
+    // cylinder_frame->moveTo(cylinder_trans, table_frame, state);
+
     rw::math::Transform3D<> cylinder_trans(cylinder_positions[0], cylinder_rot);
     cylinder_frame->moveTo(cylinder_trans, table_frame, state);
 
