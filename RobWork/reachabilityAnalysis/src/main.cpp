@@ -35,8 +35,8 @@ while (true){
         experiment_nr = 1;
         // file_path = "../../Experiments/stepsize_006/side/data/right.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/right/";
-        file_path = "../../Experiments/stepsize_test/side/data/right.txt";
-        folder = "../../Experiments/stepsize_test/side/rwplays/right/";
+        file_path = "../../Experiments/stepsize_test/side/data/1.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/1/";
         std::cout << "during 1. position" << std::endl;
     }
     else if (temp == 2)
@@ -44,8 +44,8 @@ while (true){
         experiment_nr = 2;
         // file_path = "../../Experiments/stepsize_006/side/data/mid.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/mid/";
-        file_path = "../../Experiments/stepsize_test/side/data/mid.txt";
-        folder = "../../Experiments/stepsize_test/side/rwplays/mid/";
+        file_path = "../../Experiments/stepsize_test/side/data/2.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/2/";
         std::cout << "during 2. position" << std::endl;
     }
     else if (temp == 3)
@@ -53,23 +53,51 @@ while (true){
         experiment_nr = 3;
         // file_path = "../../Experiments/stepsize_006/side/data/left.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/left/";
-        file_path = "../../Experiments/stepsize_test/side/data/left.txt";
-        folder = "../../Experiments/stepsize_test/side/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/3.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/3/";
         std::cout << "during 3. position" << std::endl;
-    } else if (temp == 4)
+    } 
+    else if (temp == 4)
     {
         experiment_nr = 4;
+        // file_path = "../../Experiments/stepsize_006/side/data/left.txt";
+        // folder = "../../Experiments/stepsize_006/side/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/4.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/4/";
+        std::cout << "during 3. position" << std::endl;
+    } 
+    else if (temp == 5)
+    {
+        experiment_nr = 5;
+        // file_path = "../../Experiments/stepsize_006/side/data/left.txt";
+        // folder = "../../Experiments/stepsize_006/side/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/5.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/5/";
+        std::cout << "during 3. position" << std::endl;
+    } 
+    else if (temp == 6)
+    {
+        experiment_nr = 6;
+        // file_path = "../../Experiments/stepsize_006/side/data/left.txt";
+        // folder = "../../Experiments/stepsize_006/side/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/6.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/6/";
+        std::cout << "during 3. position" << std::endl;
+    } 
+    else if (temp == 7)
+    {
+        experiment_nr = 7;
         // file_path = "../../Experiments/stepsize_006/side/data/place.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/place/";
-        file_path = "../../Experiments/stepsize_test/side/data/place.txt";
-        folder = "../../Experiments/stepsize_test/side/rwplays/place/";
+        file_path = "../../Experiments/stepsize_test/side/data/7.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/7/";
         std::cout << "during 4. position" << std::endl;
     } else {
         return 0;
     }
     
 
-    if (temp <= 4){
+    if (temp <= 7){
 
     // load workcell;
     rw::models::WorkCell::Ptr wc = rw::loaders::WorkCellLoader::Factory::load(reach.WC_FILE);
@@ -112,19 +140,20 @@ while (true){
     // }
     Frame* table_frame = wc->findFrame ("Table");
 
+
     // get start state and default rotation
     rw::kinematics::State state = wc->getDefaultState();
     rw::math::Rotation3D<> base_rot = base_frame->getTransform(state).R();
-     rw::math::Rotation3D<> cylinder_rot = cylinder_frame->getTransform(state).R();
+     rw::math::Rotation3D<> cylinder_rot = cylinder_frame->getTransform(state).R(); 
 
     // Generate position for reachability analysis y=0.3,-0.6 and x=-0.4,0.4
     std::vector<rw::math::Vector3D<>> base_positions;
     for (double y = 0.3; y >= -0.6; y -= stepsize) { 
         for (double x = -0.4; x <= 0.4; x += stepsize) {
-            // check for goal position
-            if (y < -0.3 && x > 0.1){
-                 continue; 
-                }
+            // // check for goal position
+            // if (y < -0.3 && x > 0.1){
+            //      continue; 
+            //     }
             rw::math::Vector3D<> pos(x, y, 0.0);
             base_positions.push_back(pos);
         }
@@ -159,40 +188,70 @@ while (true){
         //            std::stod("-0.34"),
         //            std::stod("0.54"),
         //            std::stod("0.15"));
-        cylinder_pos = rw::math::Vector3D<>(-0.34, 0.54, 0.25);
-        cylinder_positions = {rw::math::Vector3D<>(-0.34, 0.54, 0.25)};
-        // cylinder_pos = rw::math::Vector3D<>(-1.272, 2.405, 0.550);
-        // cylinder_positions = {rw::math::Vector3D<>(-1.272, 2.405, 0.550)};
+        // cylinder_pos = rw::math::Vector3D<>(-0.34, 0.54, 0.25);
+        // cylinder_positions = {rw::math::Vector3D<>(-0.34, 0.54, 0.25)};
+        cylinder_pos = rw::math::Vector3D<>(-0.46, -1.1, 0.2 );
+        cylinder_positions = {rw::math::Vector3D<>(-0.46, -1.1, 0.2)};
         break;
     case 2:
         // cylinder_pos = rw::math::Vector3D<>(
         //            std::stod("0.0"),
         //            std::stod("0.54 "),
         //            std::stod("0.15"));
-        cylinder_pos = rw::math::Vector3D<>(0.0, 0.54, 0.15);
-        cylinder_positions = {rw::math::Vector3D<>(0.0, 0.54, 0.15)};
-        // cylinder_pos = rw::math::Vector3D<>(-1.272, 2.405, 0.550);
-        // cylinder_positions = {rw::math::Vector3D<>(-1.272, 2.405, 0.550)};
+        // cylinder_pos = rw::math::Vector3D<>(0.0, 0.54, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.0, 0.54, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(-0.30, -1.1, 0.2 );
+        cylinder_positions = {rw::math::Vector3D<>(-0.30, -1.1, 0.2)};
         break;
     case 3:
         // cylinder_pos = rw::math::Vector3D<>(
         //            std::stod("0.34"),
         //            std::stod("0.54"),
         //            std::stod("0.15"));
-        cylinder_pos = rw::math::Vector3D<>(0.34, 0.54, 0.15);
-        cylinder_positions = {rw::math::Vector3D<>(0.34, 0.54, 0.15)};
-        // cylinder_pos = rw::math::Vector3D<>(-1.272, 2.405, 0.550);
-        // cylinder_positions = {rw::math::Vector3D<>(-1.272, 2.405, 0.550)};
+        // cylinder_pos = rw::math::Vector3D<>(0.34, 0.54, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.34, 0.54, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(-0.150, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(-0.150, -1.1, 0.2)};
         break;
     case 4:
         // cylinder_pos = rw::math::Vector3D<>(
         //                    std::stod("0.3"),
         //                    std::stod("-0.5"),
         //                    std::stod("0.15"));
-        cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
-        cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
-        // cylinder_pos = rw::math::Vector3D<>(-1.272, 2.405, 0.550);
-        // cylinder_positions = {rw::math::Vector3D<>(-1.272, 2.405, 0.550)};
+        // cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(0.025, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(0.025, -1.1, 0.2)};
+        break;
+    case 5:
+        // cylinder_pos = rw::math::Vector3D<>(
+        //                    std::stod("0.3"),
+        //                    std::stod("-0.5"),
+        //                    std::stod("0.15"));
+        // cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(0.175, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(0.175, -1.1, 0.2)};
+        break;
+    case 6:
+        // cylinder_pos = rw::math::Vector3D<>(
+        //                    std::stod("0.3"),
+        //                    std::stod("-0.5"),
+        //                    std::stod("0.15"));
+        // cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(0.35, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(0.35, -1.1, 0.2)};
+        break;
+    case 7:
+        // cylinder_pos = rw::math::Vector3D<>(
+        //                    std::stod("0.3"),
+        //                    std::stod("-0.5"),
+        //                    std::stod("0.15"));
+        // cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(0.50, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(0.50, -1.1, 0.2)};
         break;
     default:
         std::cout << "Error here!" << std::endl;
@@ -298,7 +357,7 @@ while (true){
     temp++;
     } 
 
-    if (temp > 1){ // FULL experiment is done with temp > 4
+    if (temp > 7){ // FULL experiment is done with temp > 4
         break;
     }
 }

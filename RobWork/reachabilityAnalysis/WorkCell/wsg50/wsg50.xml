@@ -47,12 +47,14 @@
 
 
   <!-- JOINT POSITION AND VELOCITY LIMITS-->
-
+<!-- 
   <PosLimit refjoint="Finger1" min="0.0" max="0.055" />  
-  <VelLimit refjoint="Finger1" max="0.42" /> 
+  <VelLimit refjoint="Finger1" max="0.42" />  -->
 <!--  <PosLimit refjoint="Finger2" min="0.0" max="0.055" /> -->
 <!--  <VelLimit refjoint="Finger2" max="0.42"/> -->
-
+  <PosLimit refjoint="Finger1" min="0.0" max="0.39" />  
+  <VelLimit refjoint="Finger1" max="0.42" /> 
+  <PosLimit refjoint="Finger2" min="0.0" max="0.39" />
 
   <!--####################################################-->
 
