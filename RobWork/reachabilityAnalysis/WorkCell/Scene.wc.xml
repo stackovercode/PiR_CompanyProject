@@ -70,15 +70,14 @@
 	</Frame>
 
 
-	<Frame name="CylinderPlace" refframe="Table" type="Movable" daf="true">
+	<!-- <Frame name="CylinderPlace" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>
 		<Pos> 0.7 0 0.225</Pos> 
-		 <!-- <Property name="ShowFrameAxis">true</Property>  -->
 		<Drawable name="CylinderPlace" refframe="CylinderPlace">
 			<RGB> 0.0 0.2 0.4 1.0 </RGB>
 			<Polytope file="parts/cylinder" />
 		</Drawable>
-	</Frame>
+	</Frame> -->
 
 	<Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>

@@ -113,24 +113,23 @@
 		</Drawable>
 	</Frame> -->
 
-		<Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
+		<!-- <Frame name="CylinderTest" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>
 		<Pos> -0.75 -0.2 0.15</Pos> 
-		 <!-- <Property name="ShowFrameAxis">true</Property>  -->
-		<Drawable name="Cylinder" refframe="Cylinder">
+		<Drawable name="CylinderTest" refframe="CylinderTest">
 			<RGB> 0.0 0.2 0.4 1.0 </RGB>
 			<Polytope file="parts/cylinder" />
 		</Drawable>
-	</Frame>
+	</Frame> -->
 
-	<!-- <Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
+	<Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>
 		<Pos> -0.46 -1.1 0.2</Pos> 
 		<Drawable name="Cylinder" refframe="Cylinder">
 			<RGB> 0.0 0.2 0.4 1.0 </RGB>
 			<Polytope file="parts/test" />
 		</Drawable>
-	</Frame> -->
+	</Frame>
 <!-- 
 	 <Frame name="Cylinder2" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>
