@@ -25,6 +25,14 @@
 		</Drawable>
 	</Frame>
 
+	<Frame name="Holder" refframe="Table" type="Movable" daf="true">
+		<RPY>204 0 0</RPY>
+		<Pos>0.7 0 -3.7</Pos>
+		<Drawable name="Holder" refframe="Holder">
+			<Polytope file="parts/Holder4" />
+		</Drawable>
+	</Frame>
+
 	<!-- <Frame name="Cyl" refframe="Tray" type="Movable" daf="true">
 		<RPY>0 0 0</RPY>
 		<Pos>0 0 0.006</Pos>
@@ -86,6 +94,16 @@
 			<Polytope file="parts/square" />
 		</Drawable>
 	</Frame>  -->
+
+	<Frame name="CylinderPlace" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> 0.7 0 0.225</Pos> 
+		 <!-- <Property name="ShowFrameAxis">true</Property>  -->
+		<Drawable name="CylinderPlace" refframe="CylinderPlace">
+			<RGB> 0.0 0.2 0.4 1.0 </RGB>
+			<Polytope file="parts/cylinder" />
+		</Drawable>
+	</Frame>
 
 	<Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>
