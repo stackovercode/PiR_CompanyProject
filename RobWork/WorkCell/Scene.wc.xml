@@ -96,7 +96,7 @@
 			<Polytope file="parts/test" />
 		</Drawable>
 	</Frame>
-
+<!-- 
 	 <Frame name="Cylinder2" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>
 		<Pos> -0.30 -1.1 0.2</Pos> 
@@ -143,7 +143,7 @@
 		<Drawable name="Cylinder" refframe="Cylinder">
 			<Polytope file="parts/test" />
 		</Drawable>
-	</Frame> 
+	</Frame>  -->
 
 
 	<!-- <Frame name="Cylinder2" refframe="Table" type="Movable" daf="true">

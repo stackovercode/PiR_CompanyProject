@@ -97,7 +97,7 @@ while (true){
     }
     
 
-    if (temp <= 7){
+    if (temp <= 2){
 
     // load workcell;
     rw::models::WorkCell::Ptr wc = rw::loaders::WorkCellLoader::Factory::load(reach.WC_FILE);
@@ -144,7 +144,7 @@ while (true){
     // get start state and default rotation
     rw::kinematics::State state = wc->getDefaultState();
     rw::math::Rotation3D<> base_rot = base_frame->getTransform(state).R();
-     rw::math::Rotation3D<> cylinder_rot = cylinder_frame->getTransform(state).R(); 
+    rw::math::Rotation3D<> cylinder_rot = cylinder_frame->getTransform(state).R(); 
 
     // Generate position for reachability analysis y=0.3,-0.6 and x=-0.4,0.4
     std::vector<rw::math::Vector3D<>> base_positions;
@@ -320,13 +320,15 @@ while (true){
        }
 
         // generate rwplay file
-        //const std::string folder = "../../rwplays/";//"/home/reventlov/RobCand/RoVi_Project/reachabilityAnalysis/rwplays/";//"../../rwplays";
-        //rwplay = folder + "_position" + std::to_string(i) + "_cylinder_Experiment_" + ".rwplay";
+        // const std::string folder = "../../rwplays/";//"/home/reventlov/RobCand/RoVi_Project/reachabilityAnalysis/rwplays/";//"../../rwplays";
+        // rwplay = folder + "_position" + std::to_string(i) + "_cylinder_Experiment_" + ".rwplay";
+        // std::cout << "Cylinder position before moving: " << cylinder_pos << std::endl;
 
-        // move cylinder
+        // // move cylinder
         // rw::math::Transform3D<> cylinder_trans(cylinder_pos, cylinder_rot);
         // cylinder_frame->moveTo(cylinder_trans, state);
-
+        // // Move cylinder
+        // std::cout << "Cylinder position after moving: " << cylinder_frame->getTransform(state).P() << std::endl;
         // get collision free solutions
         //collision_free_solutions = reach.getCollisionFreeSolutions(wc, robot_ur5, cylinder_frame, "GraspTarget", rwplay, state);
 
@@ -357,7 +359,7 @@ while (true){
     temp++;
     } 
 
-    if (temp > 7){ // FULL experiment is done with temp > 4
+    if (temp > 2){ // FULL experiment is done with temp > 4
         break;
     }
 }
