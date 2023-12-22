@@ -72,7 +72,7 @@ std::vector<rw::math::Q> Reachability::getCollisionFreeSolutions(rw::models::Wor
     for (double roll_angle = 0; roll_angle < 360.0; roll_angle += 1.0) {
 
         // rotate object
-        rw::math::RPY<> rot(0,0, roll_angle*rw::math::Deg2Rad);
+        rw::math::RPY<> rot(roll_angle*rw::math::Deg2Rad,0, 0);
         rw::math::Vector3D<> pos = object->getTransform(state).P();
 
         /***************************************************************/

@@ -25,13 +25,23 @@
 		</Drawable>
 	</Frame>
 
-	<Frame name="Holder" refframe="Table" type="Movable" daf="true">
+<!-- Left holder -->
+	<!-- <Frame name="Holder" refframe="Table" type="Movable" daf="true">
 		<RPY>204 0 0</RPY>
-		<Pos>0.7 0 -3.7</Pos>
+		<Pos>0.75 -0.2 -3.85</Pos>
+		<Drawable name="Holder" refframe="Holder">
+			<Polytope file="parts/Holder4" />
+		</Drawable>
+	</Frame> -->
+
+	<Frame name="Holder" refframe="Table" type="Movable" daf="true">
+		<RPY>20 0 0</RPY>
+		<Pos>-0.75 -0.2 -3.85</Pos>
 		<Drawable name="Holder" refframe="Holder">
 			<Polytope file="parts/Holder4" />
 		</Drawable>
 	</Frame>
+
 
 
 	<!-- <Frame name="Cyl" refframe="Tray" type="Movable" daf="true">
@@ -69,16 +79,26 @@
 		<Pos>0 0 0.15</Pos>
 	</Frame>
 
+<!-- Left holder -->
+	<!-- <Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> 0.75 -0.2 0.15</Pos> 
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<RGB> 0.0 0.2 0.4 1.0 </RGB>
+			<Polytope file="parts/cylinder" />
+		</Drawable>
+	</Frame> -->
 
 	<Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>
-		<Pos> 0.7 0 0.225</Pos> 
+		<Pos> -0.75 -0.2 0.15</Pos> 
 		 <!-- <Property name="ShowFrameAxis">true</Property>  -->
 		<Drawable name="Cylinder" refframe="Cylinder">
 			<RGB> 0.0 0.2 0.4 1.0 </RGB>
 			<Polytope file="parts/cylinder" />
 		</Drawable>
 	</Frame>
+
 
 	<!-- <Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>
@@ -171,7 +191,7 @@
 	<!-- Top grip Previus = refframe="Cylinder"-->
 	<!-- Side grip / -90 is good for pick and 90 is good for place-->
 	<Frame name="GraspTarget" refframe="Cylinder" type="Movable">
-		<RPY> 0 0 180 </RPY> <Pos> 0 0 0 </Pos>
+		<RPY> 0 0 90 </RPY> <Pos> 0 0 0 </Pos>
 	</Frame>
 
 

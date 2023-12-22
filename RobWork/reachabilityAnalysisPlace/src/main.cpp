@@ -17,7 +17,7 @@ while (true){
     std::vector<rw::math::Vector3D<>> cylinder_positions;
     std::string folder;
     std::string file_path;
-    double stepsize = 0.15; 
+    double stepsize = 0.06; 
     // 0.06 = 210
     int experiment_nr;
 
@@ -29,8 +29,10 @@ while (true){
     if (temp == 1)
     {
         experiment_nr = 1;
-        file_path = "../../Experiments/stepsize_test/side/data/left.txt";
-        folder = "../../Experiments/stepsize_test/side/rwplays/left/";
+        // file_path = "../../Experiments/stepsize_test/side/data/left.txt";
+        // folder = "../../Experiments/stepsize_test/side/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/right.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/right/";
         std::cout << "during 1. position" << std::endl;
     }
     else if (temp == 2)
@@ -105,8 +107,11 @@ while (true){
 
     switch (experiment_nr){
     case 1:
-        cylinder_pos = rw::math::Vector3D<>( 0.7, 0, 0.225);
-        cylinder_positions = {rw::math::Vector3D<>( 0.7, 0, 0.225)};
+        // Left
+        // cylinder_pos = rw::math::Vector3D<>( 0.75, -0.2, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>( 0.75, -0.2, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(-0.75, -0.2, 0.15);
+        cylinder_positions = {rw::math::Vector3D<>(-0.75, -0.2, 0.15)};
         break;
     case 2:
         cylinder_pos = rw::math::Vector3D<>(-0.30, -1.1, 0.2 );
