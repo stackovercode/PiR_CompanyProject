@@ -17,7 +17,7 @@ while (true){
     std::vector<rw::math::Vector3D<>> cylinder_positions;
     std::string folder;
     std::string file_path;
-    double stepsize = 0.3; 
+    double stepsize = 0.06; 
     // 0.06 = 190
     // 0.05 = 258
     // 0.08 = 68
@@ -35,8 +35,8 @@ while (true){
         experiment_nr = 1;
         // file_path = "../../Experiments/stepsize_006/side/data/right.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/right/";
-        file_path = "../../Experiments/stepsize_test/side/data/right.txt";
-        folder = "../../Experiments/stepsize_test/side/rwplays/right/";
+        file_path = "../../Experiments/stepsize_test/side/data/1.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/1/";
         std::cout << "during 1. position" << std::endl;
     }
     else if (temp == 2)
@@ -44,8 +44,8 @@ while (true){
         experiment_nr = 2;
         // file_path = "../../Experiments/stepsize_006/side/data/mid.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/mid/";
-        file_path = "../../Experiments/stepsize_test/side/data/mid.txt";
-        folder = "../../Experiments/stepsize_test/side/rwplays/mid/";
+        file_path = "../../Experiments/stepsize_test/side/data/2.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/2/";
         std::cout << "during 2. position" << std::endl;
     }
     else if (temp == 3)
@@ -53,23 +53,51 @@ while (true){
         experiment_nr = 3;
         // file_path = "../../Experiments/stepsize_006/side/data/left.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/left/";
-        file_path = "../../Experiments/stepsize_test/side/data/left.txt";
-        folder = "../../Experiments/stepsize_test/side/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/3.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/3/";
         std::cout << "during 3. position" << std::endl;
-    } else if (temp == 4)
+    } 
+    else if (temp == 4)
     {
         experiment_nr = 4;
+        // file_path = "../../Experiments/stepsize_006/side/data/left.txt";
+        // folder = "../../Experiments/stepsize_006/side/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/4.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/4/";
+        std::cout << "during 3. position" << std::endl;
+    } 
+    else if (temp == 5)
+    {
+        experiment_nr = 5;
+        // file_path = "../../Experiments/stepsize_006/side/data/left.txt";
+        // folder = "../../Experiments/stepsize_006/side/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/5.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/5/";
+        std::cout << "during 3. position" << std::endl;
+    } 
+    else if (temp == 6)
+    {
+        experiment_nr = 6;
+        // file_path = "../../Experiments/stepsize_006/side/data/left.txt";
+        // folder = "../../Experiments/stepsize_006/side/rwplays/left/";
+        file_path = "../../Experiments/stepsize_test/side/data/6.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/6/";
+        std::cout << "during 3. position" << std::endl;
+    } 
+    else if (temp == 7)
+    {
+        experiment_nr = 7;
         // file_path = "../../Experiments/stepsize_006/side/data/place.txt";
         // folder = "../../Experiments/stepsize_006/side/rwplays/place/";
-        file_path = "../../Experiments/stepsize_test/side/data/place.txt";
-        folder = "../../Experiments/stepsize_test/side/rwplays/place/";
+        file_path = "../../Experiments/stepsize_test/side/data/7.txt";
+        folder = "../../Experiments/stepsize_test/side/rwplays/7/";
         std::cout << "during 4. position" << std::endl;
     } else {
         return 0;
     }
     
 
-    if (temp <= 4){
+    if (temp <= 7){
 
     // load workcell;
     rw::models::WorkCell::Ptr wc = rw::loaders::WorkCellLoader::Factory::load(reach.WC_FILE);
@@ -96,11 +124,21 @@ while (true){
 
     // find cylinder
     const std::string cylinder_name = "Cylinder";
+    //const std::string cylinder_name = "Cyl";
     rw::kinematics::MovableFrame::Ptr cylinder_frame = wc->findFrame<rw::kinematics::MovableFrame>(cylinder_name);
     if (NULL == cylinder_frame) {
         RW_THROW("Could not find movable frame " + cylinder_name + " ... check model");
         return -1;
     }
+
+
+    // // find cylinderPlace
+    // const std::string cylinderPlace_name = "CylinderPlace";
+    // rw::kinematics::MovableFrame::Ptr cylinderPlace_frame = wc->findFrame<rw::kinematics::MovableFrame>(cylinderPlace_name);
+    // if (NULL == cylinderPlace_frame) {
+    //     RW_THROW("Could not find movable frame " + cylinderPlace_name + " ... check model");
+    //     return -1;
+    // }
 
     // // find table referece frame
     // const std::string table_name = "Table";
@@ -111,19 +149,33 @@ while (true){
     // }
     Frame* table_frame = wc->findFrame ("Table");
 
+
     // get start state and default rotation
     rw::kinematics::State state = wc->getDefaultState();
     rw::math::Rotation3D<> base_rot = base_frame->getTransform(state).R();
-    rw::math::Rotation3D<> cylinder_rot = cylinder_frame->getTransform(state).R();
+    // Declare the variables before the if blocks
+ //   rw::math::Rotation3D<> cylinderPlace_rot;
+    rw::math::Rotation3D<> cylinder_rot;
+
+
+    // if (temp == 1)
+    // {
+    //     cylinderPlace_rot = cylinderPlace_frame->getTransform(state).R(); 
+    // } else
+    // {
+    //     cylinder_rot = cylinder_frame->getTransform(state).R(); 
+    // }
+    cylinder_rot = cylinder_frame->getTransform(state).R(); 
+
 
     // Generate position for reachability analysis y=0.3,-0.6 and x=-0.4,0.4
     std::vector<rw::math::Vector3D<>> base_positions;
     for (double y = 0.3; y >= -0.6; y -= stepsize) { 
         for (double x = -0.4; x <= 0.4; x += stepsize) {
-            // check for goal position
-            if (y < -0.3 && x > 0.1){
-                 continue; 
-                }
+            // // check for goal position
+            // if (y < -0.3 && x > 0.1){
+            //      continue; 
+            //     }
             rw::math::Vector3D<> pos(x, y, 0.0);
             base_positions.push_back(pos);
         }
@@ -153,36 +205,76 @@ while (true){
 
     switch (experiment_nr){
     case 1:
+        //-1,272. 2,405. 0,550
         // cylinder_pos = rw::math::Vector3D<>(
         //            std::stod("-0.34"),
         //            std::stod("0.54"),
         //            std::stod("0.15"));
-        cylinder_pos = rw::math::Vector3D<>(-0.34, 0.54, 0.15);
-        cylinder_positions = {rw::math::Vector3D<>(-0.34, 0.54, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(-0.46, -1.1, 0.2 );
+        cylinder_positions = {rw::math::Vector3D<>(-0.46, -1.1, 0.2)};
+
+        // cylinder_pos = rw::math::Vector3D<>(0.7, 0, 0.225);
+        // cylinder_positions = {rw::math::Vector3D<>(0.7, 0, 0.225)};
         break;
     case 2:
         // cylinder_pos = rw::math::Vector3D<>(
         //            std::stod("0.0"),
         //            std::stod("0.54 "),
         //            std::stod("0.15"));
-        cylinder_pos = rw::math::Vector3D<>(0.0, 0.54, 0.15);
-        cylinder_positions = {rw::math::Vector3D<>(0.0, 0.54, 0.15)};
+        // cylinder_pos = rw::math::Vector3D<>(0.0, 0.54, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.0, 0.54, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(-0.30, -1.1, 0.2 );
+        cylinder_positions = {rw::math::Vector3D<>(-0.30, -1.1, 0.2)};
         break;
     case 3:
         // cylinder_pos = rw::math::Vector3D<>(
         //            std::stod("0.34"),
         //            std::stod("0.54"),
         //            std::stod("0.15"));
-        cylinder_pos = rw::math::Vector3D<>(0.34, 0.54, 0.15);
-        cylinder_positions = {rw::math::Vector3D<>(0.34, 0.54, 0.15)};
+        // cylinder_pos = rw::math::Vector3D<>(0.34, 0.54, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.34, 0.54, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(-0.150, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(-0.150, -1.1, 0.2)};
         break;
     case 4:
         // cylinder_pos = rw::math::Vector3D<>(
         //                    std::stod("0.3"),
         //                    std::stod("-0.5"),
         //                    std::stod("0.15"));
-        cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
-        cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        // cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(0.025, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(0.025, -1.1, 0.2)};
+        break;
+    case 5:
+        // cylinder_pos = rw::math::Vector3D<>(
+        //                    std::stod("0.3"),
+        //                    std::stod("-0.5"),
+        //                    std::stod("0.15"));
+        // cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(0.175, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(0.175, -1.1, 0.2)};
+        break;
+    case 6:
+        // cylinder_pos = rw::math::Vector3D<>(
+        //                    std::stod("0.3"),
+        //                    std::stod("-0.5"),
+        //                    std::stod("0.15"));
+        // cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(0.35, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(0.35, -1.1, 0.2)};
+        break;
+    case 7:
+        // cylinder_pos = rw::math::Vector3D<>(
+        //                    std::stod("0.3"),
+        //                    std::stod("-0.5"),
+        //                    std::stod("0.15"));
+        // cylinder_pos = rw::math::Vector3D<>(0.3, -0.5, 0.15);
+        // cylinder_positions = {rw::math::Vector3D<>(0.3, -0.5, 0.15)};
+        cylinder_pos = rw::math::Vector3D<>(0.50, -1.1, 0.2);
+        cylinder_positions = {rw::math::Vector3D<>(0.50, -1.1, 0.2)};
         break;
     default:
         std::cout << "Error here!" << std::endl;
@@ -214,6 +306,23 @@ while (true){
     std::string rwplay = "";
     std::vector<rw::math::Q> collision_free_solutions;
 
+    //rw::math::RPY<> rot(0, 0, 90*rw::math::Deg2Rad); // INSERTED NOW EMIL; DELETE IF NOT WORKING
+    // Assuming cylinder_frame and state are correctly set
+    // rw::math::RPY<> initialRot(0, 0, 180*rw::math::Deg2Rad); // Laying down the cylinder
+    // rw::math::Transform3D<> cylinder_trans(cylinder_positions[0], initialRot);
+    // //rw::math::Transform3D<> initialTrans(cylinder_frame->getTransform(state).P(), initialRot);
+    // cylinder_frame->moveTo(cylinder_trans, table_frame, state);
+
+    // if (temp == 1){
+    //     rw::math::Transform3D<> cylinderPlace_trans(cylinder_positions[0], cylinderPlace_rot);
+    //     cylinderPlace_frame->moveTo(cylinderPlace_trans, table_frame, state);
+        
+    // } else{
+    //     rw::math::Transform3D<> cylinder_trans(cylinder_positions[0], cylinder_rot);
+    //     cylinder_frame->moveTo(cylinder_trans, table_frame, state);
+    // }
+    
+    
     rw::math::Transform3D<> cylinder_trans(cylinder_positions[0], cylinder_rot);
     cylinder_frame->moveTo(cylinder_trans, table_frame, state);
 
@@ -236,21 +345,32 @@ while (true){
            //cylinder_frame->moveTo(cylinder_trans, state);
 
 
-           // get collision free solutions
-           std::vector<rw::math::Q> collision_free_solutions = reach.getCollisionFreeSolutions(wc, robot_ur5, cylinder_frame, "GraspTarget", rwplay, state);
+            // if (temp == 1)
+            // {
+            //     // get collision free solutions
+            //     std::vector<rw::math::Q> collision_free_solutions = reach.getCollisionFreeSolutions(wc, robot_ur5, cylinderPlace_frame, "GraspTarget", rwplay, state);
+            // } else{
+            //     // get collision free solutions
+            //     std::vector<rw::math::Q> collision_free_solutions = reach.getCollisionFreeSolutions(wc, robot_ur5, /* The above code is defining a function or a class called "cylinder_frame". */
+            //     cylinder_frame, "GraspTarget", rwplay, state);
+            // }
+            
+            std::vector<rw::math::Q> collision_free_solutions = reach.getCollisionFreeSolutions(wc, robot_ur5, cylinder_frame, "GraspTarget", rwplay, state);
 
            // store total number of solutions
            solutions += collision_free_solutions.size();
        }
 
         // generate rwplay file
-        //const std::string folder = "../../rwplays/";//"/home/reventlov/RobCand/RoVi_Project/reachabilityAnalysis/rwplays/";//"../../rwplays";
-        //rwplay = folder + "_position" + std::to_string(i) + "_cylinder_Experiment_" + ".rwplay";
+        // const std::string folder = "../../rwplays/";//"/home/reventlov/RobCand/RoVi_Project/reachabilityAnalysis/rwplays/";//"../../rwplays";
+        // rwplay = folder + "_position" + std::to_string(i) + "_cylinder_Experiment_" + ".rwplay";
+        // std::cout << "Cylinder position before moving: " << cylinder_pos << std::endl;
 
-        // move cylinder
+        // // move cylinder
         // rw::math::Transform3D<> cylinder_trans(cylinder_pos, cylinder_rot);
         // cylinder_frame->moveTo(cylinder_trans, state);
-
+        // // Move cylinder
+        // std::cout << "Cylinder position after moving: " << cylinder_frame->getTransform(state).P() << std::endl;
         // get collision free solutions
         //collision_free_solutions = reach.getCollisionFreeSolutions(wc, robot_ur5, cylinder_frame, "GraspTarget", rwplay, state);
 
@@ -281,7 +401,7 @@ while (true){
     temp++;
     } 
 
-    if (temp > 4){
+    if (temp > 7){ // FULL experiment is done with temp > 4
         break;
     }
 }

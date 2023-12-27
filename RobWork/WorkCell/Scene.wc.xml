@@ -8,6 +8,67 @@
 		</Drawable>
 	</Frame>
 
+	<Frame name="Table2" refframe="WORLD" type="Fixed">
+		<RPY>90 0 0</RPY>
+		<Pos>0 -1.1 -0.1</Pos>
+		<Drawable name="Table2" refframe="Table2">
+			<Polytope file="table2/Sigmund_table" />
+		</Drawable>
+	</Frame>
+
+	<Frame name="Tray" refframe="Table2" type="Movable" daf="true">
+		<RPY>0 0 0</RPY>
+		<Pos>3.507 1.272 0.645</Pos>
+		<Drawable name="Tray" refframe="Tray">
+			<RGB> 0.0 0.9 0.0 1.0 </RGB>
+			<Polytope file="parts/TrayN2" />
+		</Drawable>
+	</Frame>
+
+	<!-- Left holder -->
+	<!-- <Frame name="Holder" refframe="Table" type="Movable" daf="true">
+		<RPY>204 0 0</RPY>
+		<Pos>0.75 -0.2 -3.85</Pos>
+		<Drawable name="Holder" refframe="Holder">
+			<Polytope file="parts/Holder4" />
+		</Drawable>
+	</Frame> -->
+
+	<Frame name="Holder" refframe="Table" type="Movable" daf="true">
+		<RPY>20 0 0</RPY>
+		<Pos>-0.75 -0.2 -3.85</Pos>
+		<Drawable name="Holder" refframe="Holder">
+			<Polytope file="parts/Holder4" />
+		</Drawable>
+	</Frame>
+	<!-- <Frame name="Cyl" refframe="Tray" type="Movable" daf="true">
+		<RPY>0 0 0</RPY>
+		<Pos>0 0 0.006</Pos>
+		<Drawable name="Cyl" refframe="Cyl">
+			<RGB> 0.0 0.0 0.9 1.0 </RGB>
+			<Polytope file="parts/cyl" />
+		</Drawable>
+	</Frame>
+	<Frame name="Cyl2" refframe="Tray" type="Movable" daf="true">
+		<RPY>0 0 0</RPY>
+		<Pos>0 -0.165 0.006</Pos>
+		<Drawable name="Cyl2" refframe="Cyl2">
+			<RGB> 0.0 0.0 0.9 1.0 </RGB>
+			<Polytope file="parts/cyl" />
+		</Drawable>
+	</Frame> -->
+
+
+	<!-- <Frame name="Trex" refframe="Table"  type="Movable" daf="true">
+			<RPY> 0 0 0 </RPY> 
+			<Pos> -0.90 0 0.11 </Pos> 
+		<Drawable name="Trex" refframe="Trex">
+			<RGB> 0.0 0.9 0.0 1.0 </RGB>
+			<Polytope file="parts/dino" />
+		</Drawable>
+	</Frame> -->
+
+
 	<Frame name="URReference" refframe="Table" type="Movable">
 		<RPY>0 0 0</RPY>
 		<Pos>0 0 0.11</Pos>
@@ -17,7 +78,7 @@
 	<!-- x was -0.0134 and z pos was 0 and x was 0-->
 	<!--insert gripper definition wsg50-->
 	<Frame name="Tool" refframe="UR10e.Flange">
-		<RPY> 0 0 0 </RPY> <Pos> 0 0 0.072 </Pos> <!-- 180 0 0 -->
+		<RPY> 180 0 0 </RPY> <Pos> 0 0 0.072 </Pos> <!-- 180 0 0 -->
 	</Frame>
 	<Include file="wsg50/wsg50.xml"/>
 
@@ -42,17 +103,84 @@
 		</Drawable>
 	</Frame>  -->
 
-	<Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
+	<!-- Left holder -->
+	<!-- <Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
 		<RPY> 0 0 0 </RPY>
-		<Pos> -0.34 0.54 0.15</Pos> 
-		 <!-- <Property name="ShowFrameAxis">true</Property>  -->
+		<Pos> 0.75 -0.2 0.15</Pos> 
 		<Drawable name="Cylinder" refframe="Cylinder">
 			<RGB> 0.0 0.2 0.4 1.0 </RGB>
 			<Polytope file="parts/cylinder" />
 		</Drawable>
+	</Frame> -->
+
+		<!-- <Frame name="CylinderTest" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> -0.75 -0.2 0.15</Pos> 
+		<Drawable name="CylinderTest" refframe="CylinderTest">
+			<RGB> 0.0 0.2 0.4 1.0 </RGB>
+			<Polytope file="parts/cylinder" />
+		</Drawable>
+	</Frame> -->
+
+	<Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> -0.46 -1.1 0.2</Pos> 
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<RGB> 0.0 0.2 0.4 1.0 </RGB>
+			<Polytope file="parts/test" />
+		</Drawable>
+	</Frame>
+<!-- 
+	 <Frame name="Cylinder2" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> -0.30 -1.1 0.2</Pos> 
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/test" />
+		</Drawable>
 	</Frame>
 
-	<Frame name="Cylinder2" refframe="Table" type="Movable" daf="true">
+	<Frame name="Cylinder3" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> -0.150 -1.1 0.2</Pos> 
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/test" />
+		</Drawable>
+	</Frame> 
+
+	<Frame name="Cylinder4" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> 0.025 -1.1 0.2</Pos> 
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/test" />
+		</Drawable>
+	</Frame> 
+
+	<Frame name="Cylinder5" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> 0.175 -1.1 0.2</Pos> 
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/test" />
+		</Drawable>
+	</Frame> 
+
+	<Frame name="Cylinder6" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> 0.35 -1.1 0.2</Pos> 
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/test" />
+		</Drawable>
+	</Frame> 
+
+	<Frame name="Cylinder7" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> 0.50 -1.1 0.2</Pos> 
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/test" />
+		</Drawable>
+	</Frame>  -->
+
+
+	<!-- <Frame name="Cylinder2" refframe="Table" type="Movable" daf="true">
 		<RPY> -90 0 180 </RPY>
 		<Pos> 0.0 0.54 0.15</Pos>	
 		<Drawable name="Cylinder" refframe="Cylinder">
@@ -74,7 +202,15 @@
 		<Drawable name="Cylinder" refframe="Cylinder">
 			<Polytope file="parts/cylinder" />
 		</Drawable>
-	</Frame> 
+	</Frame>  -->
+
+	<!-- <Frame name="Cylinder5" refframe="Table" type="Movable" daf="true">
+		<RPY> -90 0 90 </RPY>
+		<Pos> -0.90 0 0.15</Pos>
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/cylinder1" />
+		</Drawable>
+	</Frame>  -->
 
 
 	<!-- <Frame name="Cylinder" refframe="Table" type="Movable" daf="true">

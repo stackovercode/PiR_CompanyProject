@@ -149,6 +149,9 @@ void SamplePlugin::open (WorkCell* workcell)
     // if ( _bottle == nullptr )
     //     RW_THROW("Ball frame not found.");
     
+    // _tray = _wc->findFrame<rw::kinematics::Frame>("Tray");
+    // if ( _tray == nullptr )
+    // RW_THROW("Tray frame not found.");
     
     _table = _wc->findFrame<rw::kinematics::Frame>("Table");
     if ( _table == nullptr )

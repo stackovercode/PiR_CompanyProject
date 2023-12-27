@@ -8,9 +8,9 @@
 
   <!--####################################################-->
 
-  <!--LEFT FINGER-->
+  <!--LEFT FINGER     <Pos>-0.38 0 0</Pos>-->
   <Joint name="Finger1" refframe="Base" type="Prismatic">
-    <RPY>0 90 180</RPY> <Pos>-0.45 0 0</Pos>
+    <RPY>0 90 180</RPY> <Pos>0 0 0</Pos>
   </Joint>
 
   <!--LEFT FINGER TCP FRAME-->
@@ -25,9 +25,9 @@
   
   <!--####################################################-->
 
-  <!--RIGHT FINGER-->
+  <!--RIGHT FINGER    <Pos>0.38 0 0</Pos>-->
   <Joint name="Finger2" refframe="Base" type="Prismatic">
-    <RPY>0 90 0</RPY> <Pos>0.45 0 0</Pos>
+    <RPY>0 90 0</RPY> <Pos>0 0 0</Pos>
     <Depend on="Finger1" gain="1" offset="0" />
   </Joint>
 
@@ -48,11 +48,13 @@
 
   <!-- JOINT POSITION AND VELOCITY LIMITS-->
 
-  <!-- <PosLimit refjoint="Finger1" min="0.0" max="0.055" />  
-  <VelLimit refjoint="Finger1" max="0.42" />  -->
-  <PosLimit refjoint="Finger1" min="0.0" max="0.475" />  
+  <PosLimit refjoint="Finger1" min="0.0" max="0.055" />  
+  <VelLimit refjoint="Finger1" max="0.42" />  
+  <!-- <PosLimit refjoint="Finger1" min="0.0" max="0.39" />  
   <VelLimit refjoint="Finger1" max="0.42" /> 
-  <PosLimit refjoint="Finger2" min="0.0" max="0.475" />
+  <PosLimit refjoint="Finger2" min="0.0" max="0.39" /> -->
+
+  
 <!--  <PosLimit refjoint="Finger2" min="0.0" max="0.055" /> -->
 <!--  <VelLimit refjoint="Finger2" max="0.42"/> -->
 
